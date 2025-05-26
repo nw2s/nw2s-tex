@@ -1,0 +1,56 @@
+%! Package = nw2s
+%! Author = sw
+%! Date = 3/8/25
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nw2s}[2025/03/08 nw2s base Package]
+
+\RequirePackage[skip=12pt]{parskip}
+\RequirePackage{changepage}
+\RequirePackage[fleqn]{amsmath}
+\RequirePackage{fixmath}
+\RequirePackage{graphics}
+\RequirePackage{wasysym}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+\RequirePackage{listings}
+\RequirePackage{sourcecodepro}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{color}
+\RequirePackage{amssymb}
+\RequirePackage{textgreek}
+\RequirePackage{siunitx}
+\RequirePackage{mathalpha}
+\RequirePackage{fancyhdr}
+
+\newcommand{\pagequestion}{\newpage\question}
+\newcommand{\E}{\ensuremath{ \mbox{\scriptsize{E}} }}
+\newcommand{\unaryminus}{\scalebox{0.66}[1.0]{\( - \)}}
+\newcommand{\nenotation}[2]{#1\E \unaryminus #2}
+\newcommand{\enotation}[2]{#1\E #2}
+
+% Units
+\newcommand{\uum}{\unit{\micro\meter}}
+\newcommand{\uv}{\unit{\volt}}
+\newcommand{\umv}{\unit{\milli\volt}}
+\newcommand{\uma}{\unit{\milli\ampere}}
+\newcommand{\uua}{\unit{\micro\ampere}}
+\newcommand{\uko}{\unit{\kilo\ohm}}
+\newcommand{\uus}{\unit{\micro\second}}
+
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+    backgroundcolor=\color{white},
+    basicstyle=\ttfamily,
+    breaklines=true,                 % automatic line breaking only at whitespace
+    captionpos=b,                    % sets the caption-position to bottom
+    commentstyle=\color{mygreen},    % comment style
+    keywordstyle=\color{blue},       % keyword style
+    stringstyle=\color{mymauve},     % string literal style
+}
+

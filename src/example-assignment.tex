@@ -1,0 +1,81 @@
+\documentclass{exam}
+
+\RequirePackage{nw2s}
+
+\title{Example Assignment}
+\author{Thomas Scott Wilson}
+\date{May 2025}
+
+\begin{document}
+    \raggedright
+    \pointformat{}
+    \header{Thomas Scott Wilson}{EEO 101}{Assignment 1}
+    \thispagestyle{plain}
+    \setlength{\jot}{3ex}
+
+    \begin{titlepage}
+
+        \centering
+        \vspace*{\baselineskip}
+        Assignment 01\\
+        \medskip
+        12 May 2025\\
+        \vfill
+        Thomas Scott Wilson\\
+        \medskip
+        ID 1234567890 \\
+        \vfill
+        EEO 101\\
+        \medskip
+        Example Class\\
+        \medskip
+        Spring 2025 \\
+        \medskip
+        Professor Richard Feynman \\
+        \vfill
+
+    \end{titlepage}
+
+
+    \newpage
+    \begin{questions}
+        \nopointsinmargin
+
+        \question
+        This is the first question of the assignment.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris vel lobortis eros, sed fringilla quam.
+        Donec ut condimentum nibh, non scelerisque mi.
+        Aliquam consectetur vel ligula sed vehicula.
+
+        \begin{parts}
+            \part
+            This is part 1.
+            Vestibulum pharetra venenatis mi, eget ultricies nisl ultrices nec.
+            Sed nulla metus, ornare ut odio eu, dapibus vulputate ante.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            In vel venenatis mi, ornare commodo sem.
+            Suspendisse ac sem nibh.
+
+            Note: Formulas should be left aligned with a slight indent.
+            They should not be centered.
+            \begin{gather*}
+                f(x) = a_0 + \sum_{n=1}^{\infty} \left( a_n \cos\left(\frac{2\pi n x}{T}\right) + b_n \sin\left(\frac{2\pi n x}{T} \right) \right) \\
+                \text{where} \\
+                \quad a_0 = \frac{1}{T} \int_{x_0}^{x_0+T} f(x) \, dx,   \\
+                \quad a_n = \frac{2}{T} \int_{x_0}^{x_0+T} f(x) \cos\left( \frac{2\pi n x}{T} \right) dx,   \\
+                \quad b_n = \frac{2}{T} \int_{x_0}^{x_0+T} f(x) \sin\left( \frac{2\pi n x}{T} \right) dx  \\
+            \end{gather*}
+            \part
+            Or, to put it another way:
+            \begin{gather*}
+                f(x) = \sum_{n=-\infty}^{\infty} c_n \, e^{i \frac{2\pi n x}{T}}   \\
+                \text{where}   \\
+                \quad c_n = \frac{1}{T} \int_{x_0}^{x_0 + T} f(x) \, e^{-i \frac{2\pi n x}{T}} \, dx
+            \end{gather*}
+        \end{parts}
+
+    \end{questions}
+
+
+\end{document}
