@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir out
           cp ./example-assignment.pdf ./out/example-assignment.pdf
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: example-assignment
           path: out/example-assignment.pdf
